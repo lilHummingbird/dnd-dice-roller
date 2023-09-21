@@ -6,13 +6,9 @@
 
 import dice
 
-from enemy import rand_enem
+from enemy import rand_enemy
 
 def main():
-    x = True
-    while(x):
-
-
 
 
 if __name__ == "__main__":
