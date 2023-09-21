@@ -3,39 +3,22 @@
 #
 # Created by Persephone on 21.09.23 at 16.07
 #
-import random
+from random import randint
 
-def d2():
-    roll = random.randint(1,2)
-    return roll
+class Dice():
+
+    def __init__(self, foo):
+        self.foo = foo
+
+    def roll(self):
+        result = randint(1,self.foo)
+        return result
  
-def d4():
-    roll = random.randint(1,4)
-    return roll
-
-def d6():
-    roll = random.randint(1,6)
-    return roll
-
-def d8():
-    roll = random.randint(1,8)
-    return roll 
- 
-def d10():
-    roll = random.randint(1,10)
-    return roll
-
-def dper():
-    roll = random.randint(1,100)
-    return roll
-
-def d12():
-    roll = random.randint(1,12)
-    return roll
-
-def d20():
-    roll = random.randint(1,20)
-    return roll
-
-
-
+d20 = Dice(20)
+d12 = Dice(12)
+dper = Dice(100)
+d10 = Dice(10)
+d8 = Dice(8)
+d6 = Dice(6)
+d4 = Dice(4)
+d2 = Dice(2)
