@@ -1,5 +1,5 @@
 # dnd-dice-roller
-A dice roller for use alongside a D&D game.
+A set of tools for DM's to use during games. Everything from dice rolls, picking a random enemy from a dataset, a character stat roller using 4d6 and more maybe.
 
 Will include the ability to roll all the normal dice.
 - d2
@@ -10,3 +10,7 @@ Will include the ability to roll all the normal dice.
 - d12
 - d20
 - d%
+
+Pick a random enemy from the dataset containing 802 enemies. Everything from normal enemies to bosses.
+
+A character stat roller that rolls 4d6 and removes the lowest value(might add a point buy version too.).
