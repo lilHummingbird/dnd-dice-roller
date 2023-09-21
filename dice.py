@@ -9,8 +9,6 @@ class Dice():
     """
     This class represents any kind of die.
     Just specify the amount of sides in the constructor
-
-    And use `self.roll()` to roll the die
     """
 
     def __init__(self, sides):
