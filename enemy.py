@@ -8,7 +8,7 @@ import pandas as pd
 from random import randint
 
 # Insert data from data.csv
-data_set = pd.read_csv("data.csv")
+data_set = pd.read_csv("./data/data.csv")
 
 # Takes out unecessary info and returns useful info
 refined_ds = data_set[["Name", "AC", "HP", "Speeds", "STR", "DEX", "CON", "INT", "WIS", "CHA", "CR"]]
