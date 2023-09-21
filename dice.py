@@ -7,13 +7,15 @@ from random import randint
 
 class Dice():
 
-    def __init__(self, foo):
-        self.foo = foo
+    def __init__(self, sides):
+        self.sides = sides
 
     def roll(self):
-        result = randint(1,self.foo)
+        result = randint(1,self.sides)
         return result
- 
+
+
+# Shorter
 d20 = Dice(20)
 d12 = Dice(12)
 dper = Dice(100)
