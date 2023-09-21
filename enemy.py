@@ -14,11 +14,10 @@ data_set = pd.read_csv("data.csv")
 refined_ds = data_set[["Name", "AC", "HP", "Speeds", "STR", "DEX", "CON", "INT", "WIS", "CHA", "CR"]]
 
 # Callable stuff
-def rand_enem():
+def rand_enemy():
 
+    # Chooses a random row in the document
+    rand_row = refined_ds.loc[[randint(0,801)]]
 
-
-# Chooses a random row in the document
-rand_row = refined_ds.loc[[randint(0,801)]]
-
-print(rand_col)
+    result = rand_row
+    return result
