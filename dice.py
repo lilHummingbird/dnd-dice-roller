@@ -11,7 +11,7 @@ class Dice():
         self.sides = sides
 
     def roll(self):
-        result = randint(1,self.sides)
+        result = randint(1, self.sides)
         return result
 
 
