@@ -1,9 +1,10 @@
-#
+#!/usr/bin/python3
 # dice.py
 #
 # Created by Persephone on 21.09.23 at 16.07
 #
 from random import randint
+import argparse
 
 class Dice():
     """
@@ -19,14 +20,25 @@ class Dice():
     def roll(self):
         result = randint(1, self.sides)
         return result
+ 
+def rolldice(x):
+    result = Dice(x).roll()
+    return result
+
+def main():
+    if args.sides:
+        print("Your roll was:\n")
+        for n in range(0,args.reroll):
+            print(f"{rolldice(args.sides)}")
 
 
-# Shorter
-d20 = Dice(20)
-d12 = Dice(12)
-dper = Dice(100)
-d10 = Dice(10)
-d8 = Dice(8)
-d6 = Dice(6)
-d4 = Dice(4)
-d2 = Dice(2)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+            prog='Dice roller',
+            description='Rolls dice')
+    parser.add_argument('sides', type=int, help='Choose to roll dice with x sides.')
+    parser.add_argument('-r','--reroll',type=int, default=1, help='Repeat the diceroll x amount of times')
+    args = parser.parse_args()
+
+    main()
