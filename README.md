@@ -13,4 +13,4 @@ Will include the ability to roll all the normal dice.
 
 Pick a random enemy from the dataset containing 802 enemies. Everything from normal enemies to bosses.
 
-A character stat roller that rolls 4d6 and removes the lowest value(might add a point buy version too.).
+A character stat roller that rolls 4d6 and removes the lowest value.
