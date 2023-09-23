@@ -14,3 +14,5 @@ Will include the ability to roll all the normal dice.
 Pick a random enemy from the dataset containing 802 enemies. Everything from normal enemies to bosses.
 
 A character stat roller that rolls 4d6 and removes the lowest value.
+
+All tools can either be run from main.py or by themselves using the args provided. Use -h if you're unsure.
