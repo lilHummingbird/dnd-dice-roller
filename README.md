@@ -15,4 +15,6 @@ Pick a random enemy from the dataset containing 802 enemies. Everything from nor
 
 A character stat roller that rolls 4d6 and removes the lowest value.
 
+An encounter creator for simple inspiration or a quick encounter.
+
 All tools can either be run from main.py or by themselves using the args provided. Use -h if you're unsure.
